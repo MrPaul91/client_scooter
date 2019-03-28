@@ -18,7 +18,7 @@ export class GoogleMapComponent {
 
   initMap(){
 
-    let coords = new google.maps.LatLng(25,80);
+    let coords = new google.maps.LatLng(6.20119212074259,-75.56633907112482);
     let mapOptions: google.maps.MapOptions = {
       center: coords,
       zoom: 11,

@@ -1,0 +1,44 @@
+<body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+          <div class="card card-signin my-5">
+            <div class="card-body">
+
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hf1szJyMhjc"></iframe>
+                  </div>
+              
+              <form class="form-signin">
+                
+                <div class="form-label-group">
+          
+                  <input type="nombre" id="inputNombre" class="form-control" placeholder="Nombre" name="nombre"[(ngModel)]="nombre" required autofocus>
+                </div>
+                <div class="form-label-group">
+                  <input type="email" id="inputEmail" class="form-control" [(ngModel)]="email" name="email" placeholder="Email" required>
+                
+                </div>
+                <div class="form-label-group">
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password" name="password" [(ngModel)]="password" required>
+                  
+                </div>
+
+                <div class="row">
+                    <div class="col md-6">
+                    <button class="btn btn-lg btn-primary btn-block text-uppercase" (click)="regresar()" type="submit">REGRESAR</button>
+                  </div>
+                  <div class="col md-6">
+                    <button class="btn btn-lg btn-primary btn-block text-uppercase" (click)="signUp()" type="submit">LET'S GO !</button>
+                  </div>
+               
+               </div>
+                <hr class="my-4">
+                <img src="../../assets/icon/scooters.jpg" alt="..." class="img-responsive center-block" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
